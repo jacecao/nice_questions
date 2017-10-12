@@ -1,4 +1,4 @@
-* ####Code  
+* #### Code  
 ```javascript
 function Foo () {
   getName = function () {
@@ -24,7 +24,7 @@ function getName () {
 }
 ```     
 
-* ####Questions
+* #### Questions
 ```javascript
 # 请依次给出下列运算后的结果
 Foo.getName();
@@ -51,7 +51,7 @@ new Foo().getName(); > 3
 new new Foo().getName(); > 3 
 ```  
 
-* ####Why
+* #### Why
    
    ***1 Foo.getName()***
    > 这里很容易看成是访问原型对象上的getName()方法，其实这里就是访问Foo的静态属性，

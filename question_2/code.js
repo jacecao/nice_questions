@@ -5,7 +5,7 @@ function setName (obj) {
 	obj.name = 'Change';
 }
 
-var persion = new Object();
+let persion = new Object();
 setName(persion);
 console.log(persion.name);
 // 请给出打印值
