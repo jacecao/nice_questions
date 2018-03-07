@@ -1,3 +1,6 @@
+/*
+** 浏览端使用
+ */
 function Foo () {
 	getName = function () {
 		console.log(1);

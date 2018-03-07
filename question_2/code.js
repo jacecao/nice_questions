@@ -5,7 +5,7 @@ function setName (obj) {
 	obj.name = 'Change';
 }
 
-let persion = new Object();
-setName(persion);
-console.log(persion.name);
+let person = new Object();
+setName(person);
+console.log(person.name);
 // 请给出打印值
