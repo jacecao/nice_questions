@@ -36,7 +36,7 @@ new Foo().getName();
 new new Foo().getName();
 ```    
 
-* ####Answer    
+* #### Answer    
 ```javascript
 Foo.getName(); > 2
 getName(); > 4

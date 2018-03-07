@@ -18,7 +18,7 @@ console.log(c);
 请给出a,c的值？
 ```    
 
-* ####Answer 
+* #### Answer 
 
 ```javascript
 a /> 1
