@@ -29,6 +29,7 @@ let obj = Object.create(Fun);
 console.log(obj.age);
 // 应该这样做
 obj = Object.create(new Func());
+console.log(obj.age);
 // 或者这样
 obj = Object.setPrototypeOf({}, new Fun());
 console.log(obj.age);
@@ -44,7 +45,8 @@ console.log(obj.age);
 let origin = {name: 'icey', age: 18};
 obj = {
 	getName () {
-		return super.name;
+		// return super;
+		return super.age;
 	},
 	setAge(value) {
 		super.age = value

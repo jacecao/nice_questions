@@ -18,3 +18,29 @@ if (test == 1 || test == 2) {
 console.log(test.a);
 
 ```
+
+* 继承对象中的关键字`super`
+
+首先看下面的代码，你觉得执行结果会是什么样的？
+
+```javascript
+  let origin = {name: 'icey', age: 18};
+  obj = {
+    getName () {
+      return super;
+      //return super.age;
+    },
+    setAge(value) {
+      super.age = value
+    }
+  };
+  Object.setPrototypeOf(obj, origin);
+  console.log(obj.getName());
+  obj.setAge(20);
+  console.log(origin.age);
+```
+
+super在继承者中代表所继承的原型但是需要注意的是super是不可以对外,只能对内，且不可改变,
+什么意思如上面的getName,如果返回的是super那就会报错，`super`只能用于获取原型中的属性值，不可单独对外使用。
+
+不可通过super改变原型，如上面的setAge在该方法中我们想重设原型中的age，这里既是你执行了不会报错，但你会发现是没有成功的。
